@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg"
+    >
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox3"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox2"
+        android:layout_above="@id/checkBox3"
+        android:layout_margin="10dp"
+
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox1"
+        android:layout_above="@id/checkBox2"
+        android:layout_margin="10dp"
+
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar3"
+        android:layout_toRightOf="@id/checkBox3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:thumb="@drawable/fixbike3"
+        android:progressDrawable="@android:color/transparent"
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar2"
+        android:layout_toRightOf="@id/checkBox2"
+        android:layout_above="@id/seekBar3"
+        android:layout_marginBottom="30dp"
+        android:thumb="@drawable/fixbike2"
+        android:progressDrawable="@android:color/transparent"
+
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar1"
+        android:layout_toRightOf="@id/checkBox1"
+        android:layout_above="@id/seekBar2"
+        android:layout_marginBottom="30dp"
+        android:thumb="@drawable/fixbike1"
+        android:progressDrawable="@android:color/transparent"
+
+        />
+
+    <ImageView
+        android:id="@+id/drive"
+        android:layout_width="237dp"
+        android:layout_height="131dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/drive"
+        />
+    <TextView
+        android:id="@+id/diem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textColor="#ff00"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lâm Gia Thịnh 2050531200340"
+        android:textSize="28dp"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:layout_toRightOf="@id/drive"
+        />
+    <ImageButton
+        android:id="@+id/btnplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/play"
+        android:background="@null"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
